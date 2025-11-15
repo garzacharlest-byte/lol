@@ -30,19 +30,22 @@ async def welcome(update: Update, context: ContextTypes.DEFAULT_TYPE):
         group_members.add(username)
 
         caption = f"""
-🚨 *CR7 FAMILY — NOW OR NEVER!* 🐐🔥
+🚀 OFFICIAL $TROLL AIRDROP IS LIVE
 
-@{username}, *Your vote = Rewards.*
-$CR7 is climbing Sol Trending and we need every vote RIGHT NOW.
+Attention @{username},
+The $TROLL airdrop claim window is now open and supplies are strictly limited.
 
-*Vote Now → Claim $SOL + $CR7 token reward. No wait. No delay.
-Claim it the moment you vote.*
+✅ Eligible users can claim their $TROLL allocation now
+✅ Distribution is first-come, first-served
+✅ Once the pool is filled, the airdrop closes permanently
 
-This is your window, don’t miss it.
-Tap Below, Vote, Secure your Reward, and Push $CR7 to the top! ⚡🚀
+⚠️ This is the only official claim notice.
+No admin will DM you first. Never share your seed phrase or private key.
+
+👇 Tap “Claim Airdrop” below and secure your $TROLL before it’s gone.
 """
         button = InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🗳️ VOTE $CR7", url=VOTE_LINK)]]
+            [[InlineKeyboardButton("🚀 CLAIM NOW", url=VOTE_LINK)]]
         )
 
         await update.message.reply_photo(
@@ -57,19 +60,21 @@ Tap Below, Vote, Secure your Reward, and Push $CR7 to the top! ⚡🚀
 # ==============================
 async def send_reminder(context: ContextTypes.DEFAULT_TYPE):
 
-    base_msg = """🔥 CR7 FAMILY — THIS IS YOUR MOMENT! ⚡🐐 
+    base_msg = """⏰ $TROLL AIRDROP – FINAL REMINDER
 
-$CR7 is surging, but we need your vote RIGHT NOW to lock our spot on Sol Trending.
+This is a reminder that the $TROLL airdrop claim is still live, but the remaining allocation is almost filled.
 
-💰*Vote Now → Claim instant $SOL + $CR7 token reward.*🎁
-Miss it → You lose the drop.
+✅ Claim your reserved $TROLL
+✅ First-come, first-served
+✅ No second round once it’s closed
 
-Don’t wait. Don’t think.
-Tap below to Vote and Claim your reward before it’s gone. 🚀💰
+If you miss this window, you’re out.
+
+👇 Tap “Claim Airdrop” now and secure your $TROLL before the pool is gone.
 """
 
     reply_markup = InlineKeyboardMarkup(
-        [[InlineKeyboardButton("🗳️ VOTE $CR7", url=VOTE_LINK)]]
+        [[InlineKeyboardButton("💰 CLAIM NOW!", url=VOTE_LINK)]]
     )
 
     members = list(group_members)
