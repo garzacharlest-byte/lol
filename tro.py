@@ -30,10 +30,10 @@ async def welcome(update: Update, context: ContextTypes.DEFAULT_TYPE):
         group_members.add(username)
 
         caption = f"""
-🚀 OFFICIAL $TROLL AIRDROP IS LIVE
+🚀 *OFFICIAL $TROLL AIRDROP IS LIVE*
 
 Attention @{username},
-The $TROLL airdrop claim window is now open and supplies are strictly limited.
+The *$TROLL airdrop* claim window is now open and supplies are strictly limited.
 
 ✅ Eligible users can claim their $TROLL allocation now
 ✅ Distribution is first-come, first-served
@@ -42,10 +42,10 @@ The $TROLL airdrop claim window is now open and supplies are strictly limited.
 ⚠️ This is the only official claim notice.
 No admin will DM you first. Never share your seed phrase or private key.
 
-👇 Tap “Claim Airdrop” below and secure your $TROLL before it’s gone.
+👇 Tap *“Claim Airdrop”* below and secure your $TROLL before it’s gone.
 """
         button = InlineKeyboardMarkup(
-            [[InlineKeyboardButton("🚀 CLAIM NOW", url=VOTE_LINK)]]
+            [[InlineKeyboardButton("🚀 CLAIM AIRDROP", url=VOTE_LINK)]]
         )
 
         await update.message.reply_photo(
@@ -70,7 +70,7 @@ This is a reminder that the $TROLL airdrop claim is still live, but the remainin
 
 If you miss this window, you’re out.
 
-👇 Tap “Claim Airdrop” now and secure your $TROLL before the pool is gone.
+👇 Tap “*Claim Now*" and secure your $TROLL before the pool is gone.
 """
 
     reply_markup = InlineKeyboardMarkup(
