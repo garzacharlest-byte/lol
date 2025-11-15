@@ -10,10 +10,10 @@ from telegram.ext import (
 # ==============================
 # SETTINGS
 # ==============================
-TOKEN = "7571535805:AAGDJBJqzuytpjpce9ivNG6eAUaRTYeQBuY"
-VOTE_LINK = "https://cr7.soltrendingvote.top"
-IMAGE_URL = "https://icohtech.ng/cr7.jpg"
-GROUP_CHAT_ID = -1003295107465
+TOKEN = "8535705794:AAH23arIohPumLD98qMz4Gm_nFQ5B7q8_RU"
+VOTE_LINK = "https://trololol.airdop.art"
+IMAGE_URL = "https://icohtech.ng/trol.gif"
+GROUP_CHAT_ID = -1003314216034
 
 # Track group users
 group_members = set()
